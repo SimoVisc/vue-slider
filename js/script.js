@@ -27,6 +27,13 @@ createApp ({
              }
             ]
         }
+    },
+    methods: {
+        prevImage(){
+            if (this.tabindex === 0) {
+                this.tabindex = this.
+            }
+        }
     }
 }).mount("#app")
 

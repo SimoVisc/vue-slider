@@ -15,17 +15,18 @@
     <div id="app">
 
         <div class="container"  >
-            <div class="slider-wrapper" tabindex="0" >
+            <div class="slider-wrapper"  tabindex="0" > 
 
-                <div class="item" v-for="slide in slides">
+                <div class="item" v-for="slide in slides" >
                     <img :src="slides.image" :alt="slides.title" />
                     <div class="text">
+                       
                         <h3> {{ slides.title }} </h3>
                         <p> {{ slides.text }} </p>
                     </div>
                 </div>
 
-                <div class="thumbs" >
+                 <div class="thumbs" > 
                     <div class="prev"></div>
                     <div class="next"></div>
                     <div class="thumb active">
