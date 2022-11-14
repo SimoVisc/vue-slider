@@ -30,9 +30,11 @@ createApp ({
     },
     methods: {
         prevImage(){
-            if (this.tabindex === 0) {
-                this.tabindex = this.
-            }
+         if (this.tabindex === 0) {
+                this.tabindex = this.image.length -1
+          }else{
+            this.tabindex--;
+          }
         }
     }
 }).mount("#app")
