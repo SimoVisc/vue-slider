@@ -32,19 +32,21 @@ createApp ({
     methods: {
         prevImage(){
          if (this.activeImage === 0) {
-                this.activeImage = this.slides.image.length -1
+                this.activeImage = this.slides.length -1;
           }else{
             this.activeImage--;
           }
         },
         nextImage(){
-            if (this. activeImage ===  this.slides.image.length -1) {
-                   this.activeImage = 0
-             }else{
+         if (this. activeImage ===  this.slides.length -1) {
+                this.activeImage = 0;
+            }else{
                this.activeImage++;
-            }
+         }
         },
-
+        changeImage(index){
+           this.activeImage = index;
+        }
     }
 }).mount("#app")
 
